@@ -4,6 +4,9 @@
         <item name="colorButtonNormal">@color/colorGoogleYellow</item>
         <item name="android:buttonCornerRadius">5dp</item>
         <item name="android:typeface">monospace</item>
-        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">@color/colorDarkMode</item>
+        <item name="android:navigationBarColor">@color/colorDarkMode</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
     </style>
 </resources>

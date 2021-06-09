@@ -8,8 +8,9 @@
         <item name="colorPrimaryDark">@color/colorPrimary</item>
         <item name="colorAccent">@color/colorGoogleYellow</item>
         <item name="android:fontFamily">@font/google_sans</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@color/colorDarkMode</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:navigationBarColor">@color/colorDarkMode</item>
     </style>
 
     <style name="MainMenuTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
@@ -17,7 +18,7 @@
         <item name="colorPrimaryDark">@color/colorPrimary</item>
         <item name="colorAccent">@color/colorGoogleYellow</item>
         <item name="android:fontFamily">@font/google_sans</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@color/colorDarkMode</item>
         <item name="android:navigationBarColor">@color/colorGoogleGrey</item>
     </style>
 
@@ -26,7 +27,8 @@
         <item name="colorPrimaryDark">@color/colorPrimary</item>
         <item name="colorAccent">@color/colorGoogleYellow</item>
         <item name="android:fontFamily">@font/google_sans</item>
-        <item name="android:statusBarColor">#000000</item>
+        <item name="android:statusBarColor">@color/colorDarkMode</item>
+        <item name="android:navigationBarColor">@color/colorDarkMode</item>
     </style>
 
     <style name="AppThemeWithOutActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
@@ -39,6 +41,8 @@
         <item name="colorPrimaryDark">@color/colorPrimary</item>
         <item name="colorAccent">@color/colorGoogleYellow</item>
         <item name="android:fontFamily">@font/google_sans</item>
+        <item name="android:statusBarColor">@color/colorDarkMode</item>
+        <item name="android:navigationBarColor">@color/colorDarkMode</item>
     </style>
 
     <style name="TextStyle">
@@ -78,6 +82,8 @@
     <style name="BottomSheet" parent="@style/Widget.Design.BottomSheet.Modal">
         <item name="android:typeface">monospace</item>
         <item name="android:background">@drawable/cornercircle</item>
+        <item name="android:statusBarColor">@color/colorGoogleGrey</item>
+        <item name="android:navigationBarColor">@color/colorGoogleGrey</item>
     </style>
 
     <style name="BaseBottomSheetDialog" parent="@style/Theme.Design.Light.BottomSheetDialog">

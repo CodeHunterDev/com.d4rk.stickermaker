@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "29567577457",
+    "project_id": "sticker-maker-74021",
+    "storage_bucket": "sticker-maker-74021.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29567577457:android:dc44fadc33302f077e9ad0",
+        "android_client_info": {
+          "package_name": "com.d4rk.stickermaker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29567577457-bbegb86o08qi24rut8vf54mm1ujant0a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI5R49bxBZteuCwKaMkLBeSYTVFzBV-bI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "29567577457-bbegb86o08qi24rut8vf54mm1ujant0a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

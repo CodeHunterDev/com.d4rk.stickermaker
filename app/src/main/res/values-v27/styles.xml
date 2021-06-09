@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="DialogTheme" parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
-        <item name="colorAccent">@android:color/black</item>
+
+    <style name="AppThemeWithOutActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:fontFamily">@font/google_sans</item>
+        <item name="android:statusBarColor">@color/colorWhite</item>
+        <item name="android:navigationBarColor">@color/colorWhite</item>
         <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="windowActionBar">false</item>
     </style>
 
     <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
@@ -10,18 +15,10 @@
         <item name="colorPrimaryDark">@color/colorPrimary</item>
         <item name="colorAccent">@color/colorGoogleYellow</item>
         <item name="android:fontFamily">@font/google_sans</item>
-        <item name="android:statusBarColor">@color/colorDarkMode</item>
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:navigationBarColor">@color/colorDarkMode</item>
+        <item name="android:statusBarColor">@color/colorWhite</item>
+        <item name="android:navigationBarColor">@color/colorWhite</item>
         <item name="android:windowLightStatusBar">true</item>
-    </style>
-
-    <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Colored">
-        <item name="colorButtonNormal">@color/colorGoogleYellow</item>
-        <item name="android:typeface">monospace</item>
-        <item name="android:statusBarColor">@color/colorDarkMode</item>
-        <item name="android:navigationBarColor">@color/colorDarkMode</item>
-        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
     </style>
 
     <style name="MainMenuTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
@@ -29,9 +26,10 @@
         <item name="colorPrimaryDark">@color/colorPrimary</item>
         <item name="colorAccent">@color/colorGoogleYellow</item>
         <item name="android:fontFamily">@font/google_sans</item>
-        <item name="android:statusBarColor">@color/colorDarkMode</item>
-        <item name="android:navigationBarColor">@color/colorGoogleGrey</item>
+        <item name="android:statusBarColor">@color/colorWhite</item>
+        <item name="android:navigationBarColor">@color/colorWhite</item>
         <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
     </style>
 
     <style name="MixAppTheme" parent="Theme.MaterialComponents.DayNight">
@@ -39,17 +37,10 @@
         <item name="colorPrimaryDark">@color/colorPrimary</item>
         <item name="colorAccent">@color/colorGoogleYellow</item>
         <item name="android:fontFamily">@font/google_sans</item>
-        <item name="android:statusBarColor">@color/colorDarkMode</item>
-        <item name="android:navigationBarColor">@color/colorDarkMode</item>
+        <item name="android:statusBarColor">@color/colorWhite</item>
+        <item name="android:navigationBarColor">@color/colorWhite</item>
         <item name="android:windowLightStatusBar">true</item>
-    </style>
-
-    <style name="AppThemeWithOutActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="android:fontFamily">@font/google_sans</item>
-        <item name="windowActionBar">false</item>
-        <item name="android:statusBarColor">@color/colorDarkMode</item>
-        <item name="android:navigationBarColor">@color/colorDarkMode</item>
-        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
     </style>
 
     <style name="MyBaseTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
@@ -57,8 +48,9 @@
         <item name="colorPrimaryDark">@color/colorPrimary</item>
         <item name="colorAccent">@color/colorGoogleYellow</item>
         <item name="android:fontFamily">@font/google_sans</item>
-        <item name="android:statusBarColor">@color/colorDarkMode</item>
-        <item name="android:navigationBarColor">@color/colorDarkMode</item>
+        <item name="android:statusBarColor">@color/colorWhite</item>
+        <item name="android:navigationBarColor">@color/colorWhite</item>
         <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
     </style>
 </resources>
