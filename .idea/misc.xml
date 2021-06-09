@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/border.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/btn_green.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/button_style.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/button_style_ripple.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/close.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/cornercircle.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_close.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_done.xml" value="0.22833876221498373" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_explore.xml" value="0.22833876221498373" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_feedback.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_heart.xml" value="0.22833876221498373" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_home.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_info.xml" value="0.22833876221498373" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_license.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_magic.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_magic_inactive.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_magic_wand.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_mail.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_more.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_more_dots.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_new_folder.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_outline_save.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_outline_save_24px.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_pen.xml" value="0.22833876221498373" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_pencil.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_pencil_inactive.xml" value="0.1194078947368421" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_plus.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_policy.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_redo.xml" value="0.19444444444444445" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_redo_inactive.xml" value="0.19444444444444445" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_round_check_24px.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_round_explore_24px.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_round_redo_24px.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_round_redo_inactive_24px.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_round_undo_24px.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_round_undo_inactive_24px.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_save.xml" value="0.19444444444444445" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_search.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_search_star.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_share.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_splash_screen.xml" value="0.20625" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_splash_screen_d4rk.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_sticker_maker.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_undo.xml" value="0.22833876221498373" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_undo_inactive.xml" value="0.22833876221498373" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_web.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_whatsapp_logo.xml" value="0.22671009771986972" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_zoom.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ic_zoom_inactive.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/license.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/magic_selector.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/magnifier_selector.xml" value="0.19444444444444445" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/pencil_selector.xml" value="0.22833876221498373" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/redo_selector.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/ripple.xml" value="0.22833876221498373" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/rounded_corner.xml" value="0.21666666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/selector_bottom_menu_item.xml" value="0.22833876221498373" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/snack.xml" value="0.22833876221498373" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/sticker_3rdparty_wa.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-anydpi/undo_selector.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-night/button_style_ripple.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-night/cornercircle.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-night/ic_close.xml" value="0.22833876221498373" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-night/ic_done.xml" value="0.22833876221498373" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-night/ic_explore.xml" value="0.22833876221498373" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-night/ic_feedback.xml" value="0.22833876221498373" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-night/ic_heart.xml" value="0.22833876221498373" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-night/ic_home.xml" value="0.22833876221498373" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-night/ic_info.xml" value="0.22833876221498373" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-night/ic_license.xml" value="0.22833876221498373" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-night/ic_more.xml" value="0.20208333333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-night/ic_pen.xml" value="0.22833876221498373" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-night/ic_plus.xml" value="0.22833876221498373" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-night/ic_policy.xml" value="0.22833876221498373" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-night/ic_save.xml" value="0.22833876221498373" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-night/ic_sticker_maker.xml" value="0.22833876221498373" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/drawable-night/snack.xml" value="0.22833876221498373" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/font-v26/google_sans.xml" value="0.23713355048859935" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/layout-v23/activity_new_sticker_pack.xml" value="0.2462962962962963" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/layout-v23/activity_request_permission.xml" value="0.16875" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/layout-v23/sticker_pack_details.xml" value="0.16875" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/layout/aboutlayout.xml" value="0.16" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/layout/activity_add_to_sticker_pack.xml" value="0.10657894736842105" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/layout/activity_entry.xml" value="0.16527777777777777" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/layout/activity_main.xml" value="0.22039473684210525" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/layout/activity_new_sticker_pack.xml" value="0.18" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/layout/activity_photo_edit.xml" value="0.21" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/layout/activity_request_permission.xml" value="0.19166666666666668" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/layout/activity_splash_screen.xml" value="0.2182410423452769" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/layout/activity_sticker_pack_info.xml" value="0.22039473684210525" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/layout/activity_sticker_pack_list.xml" value="0.19166666666666668" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/layout/fragment_bottom_sheet.xml" value="0.22039473684210525" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/layout/fragment_create.xml" value="0.19166666666666668" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/layout/fragment_explore.xml" value="0.19166666666666668" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/layout/fragment_my_stickers.xml" value="0.2182410423452769" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/layout/sticker_created_item.xml" value="0.10657894736842105" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/layout/sticker_image.xml" value="0.19166666666666668" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/layout/sticker_item_of_list.xml" value="0.22039473684210525" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/layout/sticker_pack_details.xml" value="0.11151315789473684" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/layout/sticker_pack_list_item_image.xml" value="0.10657894736842105" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/layout/sticker_packs_list_item.xml" value="0.22039473684210525" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/menu/bottom_menu.xml" value="0.2182410423452769" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/menu/menu_new_sticker_pack.xml" value="0.22039473684210525" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/menu/sticker_menu.xml" value="0.1701388888888889" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/menu/sticker_option_menu.xml" value="0.1701388888888889" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/menu/toolbar.xml" value="0.1701388888888889" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.20972222222222223" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/mipmap-night-anydpi-v26/ic_clipboard_cleaner.xml" value="0.13125" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Documents/Apps/com.d4rk.stickermaker/app/src/main/res/mipmap-night-anydpi-v26/ic_launcher.xml" value="0.19027777777777777" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/addmore.xml" value="0.2962962962962963" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/border.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/btn_green.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/button_style.xml" value="0.2962962962962963" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/button_style_ripple.xml" value="0.25" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/close.xml" value="0.2962962962962963" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/cornercircle.xml" value="0.2962962962962963" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/createpack.xml" value="0.2962962962962963" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/createsticker.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/edit.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/feedback.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_feedback.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_heart.xml" value="0.2675925925925926" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_home.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_info.xml" value="0.2675925925925926" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_link.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_magic.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_magic_inactive.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_magic_wand.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_magic_wand_inactive.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_mail.xml" value="0.2675925925925926" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_more.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_more_dots.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_new_folder.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_outline_add_24px.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_outline_save.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_outline_save_24px.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_pen.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_pencil.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_pencil_inactive.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_plus.xml" value="0.2675925925925926" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_policy.xml" value="0.2675925925925926" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_round_check_24px.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_round_create_24px.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_round_explore_24px.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_round_home_24px.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_round_redo_24px.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_round_redo_inactive_24px.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_round_undo_24px.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_round_undo_inactive_24px.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_search.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_search_star.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_sticker_maker.xml" value="0.2675925925925926" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_web.xml" value="0.2675925925925926" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_zoom.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ic_zoom_inactive.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/info.xml" value="0.2962962962962963" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/license.xml" value="0.2962962962962963" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/like.xml" value="0.2962962962962963" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/links.xml" value="0.2962962962962963" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/magic_selector.xml" value="0.20729166666666668" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/magnifier_selector.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/more.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/options.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/pencil_selector.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/redo_selector.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ripple.xml" value="0.2675925925925926" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/ripple_text.xml" value="0.2962962962962963" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/rounded_corner.xml" value="0.25" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/selector_bottom_menu_item.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/share.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/snack.xml" value="0.2962962962962963" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-anydpi/undo_selector.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-night/button_style_ripple.xml" value="0.2962962962962963" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-night/cornercircle.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-night/ic_heart.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-night/ic_info.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-night/ic_link.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-night/ic_more.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-night/ic_more_dots.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-night/ic_new_folder.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-night/ic_pen.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-night/ic_share.xml" value="0.2916666666666667" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-night/ic_sticker_maker.xml" value="0.2675925925925926" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-night/like.xml" value="0.2962962962962963" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-night/ripple_text.xml" value="0.2962962962962963" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-night/rounded_corner.xml" value="0.2962962962962963" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-night/snack.xml" value="0.2962962962962963" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-xxxhdpi/ic_magic_wand.xml" value="0.2962962962962963" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-xxxhdpi/ic_zoom_inactive.xml" value="0.2962962962962963" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-xxxhdpi/magic_selector.xml" value="0.2962962962962963" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-xxxhdpi/magnifier_selector.xml" value="0.2962962962962963" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-xxxhdpi/pencil_selector.xml" value="0.2962962962962963" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-xxxhdpi/redo_selector.xml" value="0.2962962962962963" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable-xxxhdpi/undo_selector.xml" value="0.2962962962962963" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable/btn_green.xml" value="0.2962962962962963" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable/ic_outline_save_24px.xml" value="0.2962962962962963" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable/ripple.xml" value="0.2962962962962963" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/drawable/selector_bottom_menu_item.xml" value="0.2935185185185185" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/font-v26/google_sans.xml" value="0.21770833333333334" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/font/google_sans.xml" value="0.2962962962962963" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/layout/aboutlayout.xml" value="0.2537037037037037" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/layout/activity_add_to_sticker_pack.xml" value="0.22" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/layout/activity_entry.xml" value="0.22" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/layout/activity_main.xml" value="0.16875" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/layout/activity_new_sticker_pack.xml" value="0.2537037037037037" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/layout/activity_photo_edit.xml" value="0.2537037037037037" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/layout/activity_request_permission.xml" value="0.3489583333333333" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/layout/activity_sticker_pack_info.xml" value="0.2" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/layout/activity_sticker_pack_list.xml" value="0.2537037037037037" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/layout/fragment_bottom_sheet.xml" value="0.33" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/layout/fragment_create.xml" value="0.2537037037037037" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/layout/fragment_explore.xml" value="0.3489583333333333" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/layout/fragment_my_stickers.xml" value="0.2537037037037037" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/layout/sticker_created_item.xml" value="0.2537037037037037" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/layout/sticker_image.xml" value="0.1875" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/layout/sticker_item_of_list.xml" value="0.1875" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/layout/sticker_pack_details.xml" value="0.25393883225208524" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/layout/sticker_pack_list_item_image.xml" value="0.1875" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/layout/sticker_packs_list_item.xml" value="0.1875" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/menu/bottom_menu.xml" value="0.1875" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/menu/menu_new_sticker_pack.xml" value="0.1875" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/menu/sticker_menu.xml" value="0.1875" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/menu/sticker_option_menu.xml" value="0.1875" />
+        <entry key="..\:/Program Files/Microsoft Corporation/OneDrive/Documents/Android/Source Codes/Sticker_Maker-master/app/src/main/res/menu/toolbar.xml" value="0.1875" />
+      </map>
+    </option>
+  </component>
+  <component name="FindBugsConfigurable">
+    <option name="make" value="true" />
+    <option name="effort" value="default" />
+    <option name="priority" value="Medium" />
+    <option name="excludeFilter" value="" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="SuppressionsComponent">
+    <option name="suppComments" value="[]" />
+  </component>
+</project>

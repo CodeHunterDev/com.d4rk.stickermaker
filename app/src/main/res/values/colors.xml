@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@android:color/transparent</color>
+    <color name="colorAccent">#4285F4</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhiteShortcuts">#F5F5F5</color>
+    <color name="colorDarkShortcuts">#2D2D2D</color>
+    <color name="colorDarkMode">#121212</color>
+    <color name="colorGoogleRed">#DB4437</color>
+    <color name="colorGoogleGreen">#0F9D58</color>
+    <color name="colorGoogleYellow">#F4B400</color>
+    <color name="colorGoogleGrey">#2E2E2E</color>
+
+
+    <color name="Modal">#b7000000</color>
+    <color name="bg_row_foreground">#fcfcfc</color>
+    <color name="intro_magic_background_color">#373737</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="white_translucent1">#8AFFFFFF</color>
+    <color name="grey_500">#9E9E9E</color>
+    <color name="white_translucent2">#64FFFFFF</color>
+    <color name="grey_800">#424242</color>
+    <color name="grey_900_translucent1">#64212121</color>
+    <color name="ripple_color">#33000000</color>
+    <color name="black_translucent1">#33000000</color>
+    <color name="grey_900_translucent">#8A212121</color>
+    <color name="grey_900">#212121</color>
+    <color name="black_translucent2">#64000000</color>
+    <color name="black_translucent3">#96000000</color>
+    <color name="black">#000000</color>
+</resources>
