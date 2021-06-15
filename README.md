@@ -26,7 +26,7 @@ height="90">](https://www.paypal.me/d4rkmichaeltutorials)
 [<img src="https://github.com/D4rK7355608/com.d4rk.cleaner/blob/master/screenshots/badges/deviant_art.png"
 alt="PayPall"
 height="90">](https://www.deviantart.com/d4rk7355608)
-[<img src="https://github.com/D4rK7355608/com.d4rk.cleaner/blob/master/screenshots/badges/gamejolt.png"
+[<img src="https://github.com/D4rK7355608/com.d4rk.stickermaker/blob/master/screenshots/ic_play_store.png"
 alt="PayPall"
 height="90">](https://gamejolt.com/@D4rK_S-A-D)
 
