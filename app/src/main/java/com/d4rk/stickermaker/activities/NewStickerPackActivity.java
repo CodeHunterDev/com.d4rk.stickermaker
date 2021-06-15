@@ -141,7 +141,7 @@ public class NewStickerPackActivity extends AppCompatActivity {
         }
     }
     static class ImageAdapter extends BaseAdapter {
-        private Context mContext;
+        private final Context mContext;
         public ImageAdapter(Context c) {
             mContext = c;
         }

@@ -30,8 +30,6 @@ height="90">](https://www.deviantart.com/d4rk7355608)
 alt="PayPall"
 height="90">](https://gamejolt.com/@D4rK_S-A-D)
 
-You're tired of the abundance of phone cleaners on the Google Play Store Tired of them being extremely shady Tired of them doing nothing Tired of ads and ads and ads Tired of having to pay for nothing Me too.
-
 Bugs can be reported here.
 
 ## Opening Issues :warning:
@@ -42,9 +40,10 @@ Bugs can be reported here.
 - Create an Android/general issue/bug.
 
 Known bugs:
-- Rare moments when "Clean" button not working after using split screen.
+- Dark status bar icons when dark theme is on;
+- Photo preview is not working.
 
-__D4rK Cleaner is 100% free, open source inspired by LTE Cleaner by TheRedSpy15, ad free, and deletes everything it claims to!__
+__Sticker Maker is 100% free, open source, ad free, and easy to use for everyone!__
 Upcoming major features in development:
 | Feature name         | Description                                  | Status        |
 | -------------------- | -------------------------------------------- | ------------- |

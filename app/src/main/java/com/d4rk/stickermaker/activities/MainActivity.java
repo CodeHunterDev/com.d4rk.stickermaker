@@ -130,10 +130,11 @@ public class MainActivity extends AddStickerPackActivity implements CheckRefresh
                 i.setType("text/plain");
                 i.putExtra(Intent.EXTRA_SUBJECT, "Sticker Central");
                 String sAux = "\nDownload Sticker Maker for creating 100% ad free awesome WhatsApp stickers.\n\n";
-                sAux = sAux + "https://play.google.com/store/apps/details?id=com.d4rk.cleaner";
+                sAux = sAux + "https://play.google.com/store/apps/details?id=com.d4rk.stickermaker";
                 i.putExtra(Intent.EXTRA_TEXT, sAux);
                 startActivity(Intent.createChooser(i, "choose one"));
             } catch(Exception e) {
+                e.printStackTrace();
             }
         }
         if(menuItem==R.id.about){
@@ -199,10 +200,9 @@ public class MainActivity extends AddStickerPackActivity implements CheckRefresh
     public void onFeedbackClick() {
         openPlay("com.d4rk.cleaner");
     }
-    @Override
-    public void onAboutClick() {
+    @Override public void onAboutClick() {
         Intent intent = new Intent(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse("market://details?id="+"com.d4rk.stickers"));
+        intent.setData(Uri.parse("market://details?id="+"com.d4rk.cleaner"));
         startActivity(intent);
     }
     @Override
