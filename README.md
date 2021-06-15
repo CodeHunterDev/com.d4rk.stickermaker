@@ -7,7 +7,7 @@
 - ║║║║╩╣╚╣═╣║║║║║╩╣
 - ╚══╩═╩═╩═╩═╩╩╩╩═╝
 
-![logo](https://github.com/D4rK7355608/com.d4rk.stikcermaker/blob/master/screenshots/ic_play_store.png)
+![logo](https://github.com/D4rK7355608/com.d4rk.stickermaker/blob/master/screenshots/ic_play_store.png)
 
 # Try D4rK Sticker Maker with Google inspired material design made by D4rK! Easy to use without ads!
 
@@ -26,7 +26,7 @@ height="90">](https://www.paypal.me/d4rkmichaeltutorials)
 [<img src="https://github.com/D4rK7355608/com.d4rk.cleaner/blob/master/screenshots/badges/deviant_art.png"
 alt="PayPall"
 height="90">](https://www.deviantart.com/d4rk7355608)
-[<img src="https://github.com/D4rK7355608/com.d4rk.stickermaker/blob/master/screenshots/ic_play_store.png"
+[<img src="https://github.com/D4rK7355608/com.d4rk.cleaner/blob/master/screenshots/badges/gamejolt.png"
 alt="PayPall"
 height="90">](https://gamejolt.com/@D4rK_S-A-D)
 
@@ -49,7 +49,10 @@ Upcoming major features in development:
 | -------------------- | -------------------------------------------- | ------------- |
 | Changeable themes    | Changeable themes for older Android versions | In developing |
 
-![screenshot](https://github.com/D4rK7355608/com.d4rk.cleaner/blob/master/screenshots/screenshot.png)
+![screenshot](https://github.com/D4rK7355608/com.d4rk.stickermaker/blob/master/screenshots/1.png)
+![screenshot](https://github.com/D4rK7355608/com.d4rk.stickermaker/blob/master/screenshots/2.png)
+![screenshot](https://github.com/D4rK7355608/com.d4rk.stickermaker/blob/master/screenshots/3.png)
+![screenshot](https://github.com/D4rK7355608/com.d4rk.stickermaker/blob/master/screenshots/4.png)
 
 __Thanks vidit135g for Sticker Maker:__ https://github.com/vidit135g/Sticker_Maker
 
