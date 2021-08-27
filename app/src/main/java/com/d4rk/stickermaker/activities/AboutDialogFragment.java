@@ -14,7 +14,8 @@ public class AboutDialogFragment extends DialogFragment {
                 .setView(R.layout.aboutlayout)
                 .create();
         alertDialog.show();
-        AppCompatButton btn=alertDialog.findViewById(R.id.btnRound);
+        AppCompatButton btn = alertDialog.findViewById(R.id.btnRound);
+        assert btn != null;
         btn.setOnClickListener(v -> alertDialog.dismiss());
         return alertDialog;
     }

@@ -24,8 +24,7 @@ public class MyStickersFragment extends Fragment {
     private RecyclerView stickersRecyclerView;
     private final StickerPackListAdapter.OnAddButtonClickedListener onAddButtonClickedListener = pack -> ((MainActivity) getActivity()).addStickerPackToWhatsApp(pack.identifier, pack.name);
     private StickerPackListAdapter stickerListAdapter;
-    public MyStickersFragment() {
-    }
+    public MyStickersFragment() {}
     @Override
     public void onResume() {
         super.onResume();
@@ -35,7 +34,7 @@ public class MyStickersFragment extends Fragment {
     }
     private View view;
     private void initRecyclerView() {
-        List<StickerPack> stickersPacks = StickerPacksManager.stickerPacksContainer.getStickerPacks();
+        List < StickerPack > stickersPacks = StickerPacksManager.stickerPacksContainer.getStickerPacks();
         layoutManager = new GridLayoutManager(view.getContext(), LinearLayoutManager.VERTICAL);
         stickersRecyclerView = view.findViewById(R.id.stickers_recycler_list);
         stickersRecyclerView.setLayoutManager(layoutManager);
@@ -52,7 +51,7 @@ public class MyStickersFragment extends Fragment {
     private void initSwipeRefresh() {
         SwipeRefreshLayout swipeRefreshLayout = view.findViewById(R.id.refresh_my_stickers_swiper);
         swipeRefreshLayout.setOnRefreshListener(() -> {
-            List<StickerPack> stickersPacks = StickerPacksManager.getStickerPacks(getActivity());
+            List < StickerPack > stickersPacks = StickerPacksManager.getStickerPacks(getActivity());
             stickerListAdapter.setStickerPackList(stickersPacks);
             swipeRefreshLayout.setRefreshing(false);
             verifyStickersCount();
@@ -68,8 +67,7 @@ public class MyStickersFragment extends Fragment {
             stickerListAdapter.setMaxNumberOfStickersInARow(numColumns);
         }
     }
-    public void initButtons() {
-    }
+    public void initButtons() {}
     public void verifyStickersCount() {
         View linearLayout = view.findViewById(R.id.no_stickerspacks_icon);
         if (stickerListAdapter.getItemCount() == 0) {

@@ -6,19 +6,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import com.d4rk.stickermaker.R;
 import com.d4rk.stickermaker.utils.ImageUtils;
-
-public class StickerPreviewAdapter extends RecyclerView.Adapter<StickerPreviewViewHolder> {
-
+public class StickerPreviewAdapter extends RecyclerView.Adapter < StickerPreviewViewHolder > {
     @NonNull
     private final StickerPack stickerPack;
-
     private final int cellSize;
     private final int cellLimit;
     private final int cellPadding;
     private final int errorResource;
-
     private final LayoutInflater layoutInflater;
-
     public StickerPreviewAdapter(
             @NonNull final LayoutInflater layoutInflater,
             final int errorResource,
@@ -32,28 +27,23 @@ public class StickerPreviewAdapter extends RecyclerView.Adapter<StickerPreviewVi
         this.errorResource = errorResource;
         this.stickerPack = stickerPack;
     }
-
     @NonNull
     @Override
     public StickerPreviewViewHolder onCreateViewHolder(@NonNull final ViewGroup viewGroup, final int i) {
         View itemView = layoutInflater.inflate(R.layout.sticker_image, viewGroup, false);
         StickerPreviewViewHolder vh = new StickerPreviewViewHolder(itemView);
-
         ViewGroup.LayoutParams layoutParams = vh.stickerPreviewView.getLayoutParams();
         layoutParams.height = cellSize;
         layoutParams.width = cellSize;
         vh.stickerPreviewView.setLayoutParams(layoutParams);
         vh.stickerPreviewView.setPadding(cellPadding, cellPadding, cellPadding, cellPadding);
-
         return vh;
     }
-
     @Override
     public void onBindViewHolder(@NonNull final StickerPreviewViewHolder stickerPreviewViewHolder, final int i) {
         stickerPreviewViewHolder.stickerPreviewView.setImageResource(errorResource);
         stickerPreviewViewHolder.stickerPreviewView.setImageURI(ImageUtils.getStickerImageAsset(stickerPack.identifier, stickerPack.getStickers().get(i).imageFileName));
     }
-
     @Override
     public int getItemCount() {
         int numberOfPreviewImagesInPack;

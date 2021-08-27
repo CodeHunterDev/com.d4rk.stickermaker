@@ -149,13 +149,13 @@ public class StickerPackDetailsActivity extends AddStickerPackActivity {
             alreadyAddedText.setVisibility(View.GONE);
         }
     }
-    static class WhiteListCheckAsyncTask extends AsyncTask<StickerPack, Void, Boolean> {
-        private final WeakReference<StickerPackDetailsActivity> stickerPackDetailsActivityWeakReference;
+    static class WhiteListCheckAsyncTask extends AsyncTask < StickerPack, Void, Boolean > {
+        private final WeakReference < StickerPackDetailsActivity > stickerPackDetailsActivityWeakReference;
         WhiteListCheckAsyncTask(StickerPackDetailsActivity stickerPackListActivity) {
-            this.stickerPackDetailsActivityWeakReference = new WeakReference<>(stickerPackListActivity);
+            this.stickerPackDetailsActivityWeakReference = new WeakReference < > (stickerPackListActivity);
         }
         @Override
-        protected final Boolean doInBackground(StickerPack... stickerPacks) {
+        protected final Boolean doInBackground(StickerPack...stickerPacks) {
             StickerPack stickerPack = stickerPacks[0];
             final StickerPackDetailsActivity stickerPackDetailsActivity = stickerPackDetailsActivityWeakReference.get();
             if (stickerPackDetailsActivity == null) {

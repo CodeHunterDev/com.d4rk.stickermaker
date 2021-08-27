@@ -24,11 +24,9 @@ public class CutOut {
         @Nullable
         private Uri source;
         private boolean bordered;
-        private boolean crop = true;
         private boolean intro;
         private int borderColor = Color.WHITE;
-        private ActivityBuilder() {
-        }
+        private ActivityBuilder() {}
         /**
          * Get {@link CutOutActivity} intent to start the activity.
          */
@@ -41,9 +39,7 @@ public class CutOut {
             if (bordered) {
                 intent.putExtra(CUTOUT_EXTRA_BORDER_COLOR, borderColor);
             }
-            if (crop) {
-                intent.putExtra(CUTOUT_EXTRA_CROP, true);
-            }
+            intent.putExtra(CUTOUT_EXTRA_CROP, true);
             if (intro) {
                 intent.putExtra(CUTOUT_EXTRA_INTRO, true);
             }
@@ -74,13 +70,7 @@ public class CutOut {
             this.borderColor = borderColor;
             return bordered();
         }
-        /**
-         * Disables the cropping screen shown before the background removal screen
-         */
-        public ActivityBuilder noCrop() {
-            this.crop = false;
-            return this;
-        }
+
         /**
          * Shows an introduction to the activity, explaining every button usage. The intro is show only once.
          */
@@ -110,7 +100,9 @@ public class CutOut {
      *
      * @param data Result data to get the Exception from
      */
-    public static Exception getError(@Nullable Intent data) {
-        return data != null ? (Exception) data.getSerializableExtra(CUTOUT_EXTRA_RESULT) : null;
+    public static void getError(@Nullable Intent data) {
+        if (data != null) {
+            data.getSerializableExtra(CUTOUT_EXTRA_RESULT);
+        }
     }
 }

@@ -32,15 +32,15 @@ import java.util.ArrayList;
 public class CreateFragment extends Fragment {
     ImagesGridAdapter imagesGridAdapter;
     View view;
-    public CreateFragment() {
-    }
-    private ArrayList<Uri> loadStickersCreated() {
+    public CreateFragment() {}
+    private ArrayList < Uri > loadStickersCreated() {
         String directoryPath = Constants.STICKERS_CREATED_DIRECTORY_PATH;
         File directory = new File(directoryPath);
-        ArrayList<Uri> images = new ArrayList<>();
+        ArrayList < Uri > images = new ArrayList < > ();
         if (directory.exists()) {
             File[] stickersImages = directory.listFiles();
-            for (File f : stickersImages) {
+            assert stickersImages != null;
+            for (File f: stickersImages) {
                 if (f.isFile() && (f.getName().contains(".png") || f.getName().contains(".PNG"))) {
                     images.add(Uri.fromFile((f)));
                 }
@@ -106,23 +106,23 @@ public class CreateFragment extends Fragment {
                     verifyStickersCount();
                     break;
                 case CutOut.CUTOUT_ACTIVITY_RESULT_ERROR_CODE:
-                    Exception ex = CutOut.getError(data);
+                    CutOut.getError(data);
                     break;
                 default:
                     System.out.print("User cancelled the CutOut screen");
             }
         } else if (requestCode == Define.ALBUM_REQUEST_CODE) {
-            ArrayList<Uri> uries;
+            ArrayList < Uri > uries;
             if (resultCode == Activity.RESULT_OK) {
                 uries = data.getParcelableArrayListExtra(Define.INTENT_PATH);
                 CutOut.activity().src(uries.get(0)).intro().start(getActivity());
             }
         }
     }
-    class ImagesGridAdapter extends RecyclerView.Adapter<ImageViewHolder> {
-        ArrayList<Uri> uries = new ArrayList<>();
+    class ImagesGridAdapter extends RecyclerView.Adapter < ImageViewHolder > {
+        ArrayList < Uri > uries;
         Context context;
-        public ImagesGridAdapter(Context context, ArrayList<Uri> uries) {
+        public ImagesGridAdapter(Context context, ArrayList < Uri > uries) {
             this.uries = uries;
             this.context = context;
         }
@@ -152,12 +152,12 @@ public class CreateFragment extends Fragment {
             });
         }
         void deleteSticker(int index) {
-            new AlertDialog.Builder(context,R.style.DialogTheme)
+            new AlertDialog.Builder(context, R.style.DialogTheme)
                     .setTitle("Deleting")
                     .setMessage("Are you sure you want to delete this sticker?")
                     .setPositiveButton("Yes", (dialog, which) -> {
                         Uri uri = uries.get(index);
-                        FileUtils.deleteFile(uri.getPath(),context);
+                        FileUtils.deleteFile(uri.getPath(), context);
                         uries.remove(index);
                         notifyItemRemoved(index);
                         notifyDataSetChanged();
@@ -167,11 +167,7 @@ public class CreateFragment extends Fragment {
                     .setNegativeButton("No", null)
                     .show();
         }
-        void addToStickerPack(int index) {
-            Intent intent = new Intent(context, AddToStickerPackActivity.class);
-            intent.setData(uries.get(index));
-            startActivity(intent);
-        }
+
         @Override
         public int getItemCount() {
             return uries.size();

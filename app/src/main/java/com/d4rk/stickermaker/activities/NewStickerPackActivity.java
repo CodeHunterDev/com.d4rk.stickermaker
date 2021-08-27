@@ -39,13 +39,13 @@ public class NewStickerPackActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_sticker_pack);
-        Toolbar tool=findViewById(R.id.toolbar1);
+        Toolbar tool = findViewById(R.id.toolbar1);
         tool.setTitle("Sticker");
         setSupportActionBar(tool);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         nameEdit = findViewById(R.id.sticker_pack_name_edit);
-        empty=findViewById(R.id.animation_view);
+        empty = findViewById(R.id.animation_view);
         authorEdit = findViewById(R.id.sticker_pack_author_edit);
         FrameLayout btnCreate = findViewById(R.id.btn_create_pack);
         btnCreate.setOnClickListener(v -> {
@@ -89,7 +89,7 @@ public class NewStickerPackActivity extends AppCompatActivity {
     private boolean validateValues() {
         return nameEdit.getText().toString().trim().length() == 0 || authorEdit.getText().toString().trim().length() == 0 || imageAdapter.uries.size() == 0;
     }
-    private void saveStickerPack(List<Uri> uries, String name, String author) {
+    private void saveStickerPack(List < Uri > uries, String name, String author) {
         ProgressDialog progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Wait a moment while we process your stickers...");
         progressDialog.setTitle("Processing images");
@@ -102,7 +102,7 @@ public class NewStickerPackActivity extends AppCompatActivity {
                 intent.putExtra(StickerPackDetailsActivity.EXTRA_SHOW_UP_BUTTON, true);
                 String identifier = "." + FileUtils.generateRandomIdentifier();
                 StickerPack stickerPack = new StickerPack(identifier, name, author, Objects.requireNonNull(uries.toArray())[0].toString(), "", "", "", "");
-                List<Sticker> stickerList = StickerPacksManager.saveStickerPackFilesLocally(stickerPack.identifier, uries, NewStickerPackActivity.this);
+                List < Sticker > stickerList = StickerPacksManager.saveStickerPackFilesLocally(stickerPack.identifier, uries, NewStickerPackActivity.this);
                 stickerPack.setStickers(stickerList);
                 String stickerPath = Constants.STICKERS_DIRECTORY_PATH + identifier;
                 String trayIconFile = FileUtils.generateRandomIdentifier() + ".png";
@@ -129,7 +129,7 @@ public class NewStickerPackActivity extends AppCompatActivity {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == Define.ALBUM_REQUEST_CODE) {
-            ArrayList<Uri> uries = new ArrayList<>();
+            ArrayList < Uri > uries;
             if (resultCode == RESULT_OK) {
                 uries = data.getParcelableArrayListExtra(Define.INTENT_PATH);
                 if (uries.size() > 0) {
@@ -168,6 +168,6 @@ public class NewStickerPackActivity extends AppCompatActivity {
             imageView.setImageURI(uries.get(position));
             return imageView;
         }
-        ArrayList<Uri> uries = new ArrayList<>();
+        ArrayList < Uri > uries = new ArrayList < > ();
     }
 }

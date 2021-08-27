@@ -6,6 +6,9 @@ import android.widget.Toast;
 import com.d4rk.stickermaker.R;
 import com.d4rk.stickermaker.identities.StickerPacksContainer;
 import com.d4rk.stickermaker.utils.StickerPacksManager;
+
+import java.util.Objects;
+
 public class AddToStickerPackActivity extends AppCompatActivity {
     Uri stickerUri;
     @Override
@@ -14,7 +17,7 @@ public class AddToStickerPackActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_to_sticker_pack);
         this.stickerUri = this.getIntent().getData();
         StickerPacksManager.stickerPacksContainer = new StickerPacksContainer("", "", StickerPacksManager.getStickerPacks(this));
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         Toast.makeText(this, stickerUri.getPath(), Toast.LENGTH_LONG).show();
     }
 }

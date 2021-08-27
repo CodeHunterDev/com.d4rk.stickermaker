@@ -1,13 +1,20 @@
-![Works with Android](https://img.shields.io/badge/Works_with-Android-green?style=flat-square)
-![GitHub issues](https://img.shields.io/github/issues/D4rK7355608/com.d4rk.stikcermaker)
+<p align="center">
+<img src="/screenshots/ic_play_store.png" width="300">
+</p>
 
-# D4rK Sticker Maker
+![Android CI](https://github.com/D4rK7355608/com.d4rk.stickermaker/workflows/Android%20CI/badge.svg)
+![Works with Android](https://img.shields.io/badge/Works%20with-Android-blue)
+![GitHub issues](https://img.shields.io/github/issues/D4rK7355608/com.d4rk.stickermaker)
+![Pull requests](https://img.shields.io/github/issues-pr/D4rK7355608/com.d4rk.stickermaker?label=Pull%20requests)
+![GitHub license](https://img.shields.io/github/license/D4rK7355608/com.d4rk.stickermaker?label=License)
+![code-grade](https://www.code-inspector.com/project/26547/status/svg)
+
+## D4rK Sticker Maker
 
 - ╔╦╦╦═╦╗╔═╦═╦══╦═╗
 - ║║║║╩╣╚╣═╣║║║║║╩╣
 - ╚══╩═╩═╩═╩═╩╩╩╩═╝
 
-![logo](https://github.com/D4rK7355608/com.d4rk.stickermaker/blob/master/screenshots/ic_play_store.png)
 
 # Try D4rK Sticker Maker with Google inspired material design made by D4rK! Easy to use without ads!
 
@@ -30,6 +37,10 @@ height="90">](https://www.deviantart.com/d4rk7355608)
 alt="PayPall"
 height="90">](https://gamejolt.com/@D4rK_S-A-D)
 
+You're tired of the abundance of phone cleaners on the Google Play Store? Tired of them being extremely shady? Tired of them doing nothing? Tired of ads and ads and ads over ads on your screen? Tired of having to pay for nothing? Me too. But D4rK Cleaner is here to solve this issues!
+
+There are simply way too many apps out there that claim to speed up your device. In reality, they don't do anything. D4rK Cleaner only aims to clean your phone by removing safe to delete files, which not only frees up a lot of space, but also improve your privacy and of course your device speed. Since D4rK Cleaner removes .log files, which well, log what you do and many more.
+
 Bugs can be reported here.
 
 ## Opening Issues :warning:
@@ -49,13 +60,20 @@ Upcoming major features in development:
 | -------------------- | -------------------------------------------- | ------------- |
 | Changeable themes    | Changeable themes for older Android versions | In developing |
 
-![screenshot](https://github.com/D4rK7355608/com.d4rk.stickermaker/blob/master/screenshots/1.png)
-![screenshot](https://github.com/D4rK7355608/com.d4rk.stickermaker/blob/master/screenshots/2.png)
-![screenshot](https://github.com/D4rK7355608/com.d4rk.stickermaker/blob/master/screenshots/3.png)
-![screenshot](https://github.com/D4rK7355608/com.d4rk.stickermaker/blob/master/screenshots/4.png)
+## Screenshots:
 
-__Thanks vidit135g for Sticker Maker:__ https://github.com/vidit135g/Sticker_Maker
+<img src="/screenshots/1.png" width="200">
+<img src="/screenshots/2.png" width="200">
+<img src="/screenshots/3.png" width="200">
+<img src="/screenshots/4.png" width="200">
 
-__Privacy Policy:__ https://ghcdn.rawgit.org/D4rK7355608/com.d4rk.stickermaker/master/privacy_policy.html
+<details>
+  <summary>Special Thanks</summary>
 
-![license](https://imgur.com/QQlcEVT.png) 
+- Thanks UnderBenis96, Sonerie C8chilu' dă Haur a.k.a Băiatu' Pocnitoare (fostă petardă de elită pă vremea lu' Ștefan cel Mare) & Wiss Kill for testing;
+
+</details>
+
+__Privacy Policy:__ https://ghcdn.rawgit.org/D4rK7355608/com.d4rk.cleaner/master/privacy_policy.html
+
+![license](https://imgur.com/QQlcEVT.png)

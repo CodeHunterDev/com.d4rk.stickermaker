@@ -4,21 +4,21 @@ import android.os.Parcelable;
 import java.util.List;
 public class Sticker implements Parcelable {
     public String imageFileName;
-    List<String> emojis;
+    List < String > emojis;
     long size;
-    public Sticker(String imageFileName, List<String> emojis) {
+    public Sticker(String imageFileName, List < String > emojis) {
         this.imageFileName = imageFileName;
         this.emojis = emojis;
     }
-    protected Sticker(Parcel in) {
-        imageFileName = in.readString();
-        emojis = in.createStringArrayList();
-        size = in.readLong();
+    protected Sticker(Parcel in ) {
+        imageFileName = in .readString();
+        emojis = in .createStringArrayList();
+        size = in .readLong();
     }
-    public static final Creator<Sticker> CREATOR = new Creator<Sticker>() {
+    public static final Creator < Sticker > CREATOR = new Creator < Sticker > () {
         @Override
-        public Sticker createFromParcel(Parcel in) {
-            return new Sticker(in);
+        public Sticker createFromParcel(Parcel in ) {
+            return new Sticker( in );
         }
         @Override
         public Sticker[] newArray(int size) {

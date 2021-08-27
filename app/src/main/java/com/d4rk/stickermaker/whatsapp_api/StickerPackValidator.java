@@ -7,18 +7,15 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.util.Patterns;
 import android.webkit.URLUtil;
-
 import com.facebook.animated.webp.WebPImage;
 import com.d4rk.stickermaker.utils.FileUtils;
 import com.d4rk.stickermaker.utils.ImageUtils;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
 import java.util.Objects;
-
 public class StickerPackValidator {
     private static final int STICKER_FILE_SIZE_LIMIT_KB = 100;
     private static final int EMOJI_LIMIT = 3;
@@ -33,8 +30,6 @@ public class StickerPackValidator {
     private static final int TRAY_IMAGE_DIMENSION_MAX = 512;
     private static final String PLAY_STORE_DOMAIN = "play.google.com";
     private static final String APPLE_STORE_DOMAIN = "itunes.apple.com";
-
-
     /**
      * Checks whether a sticker pack contains valid data
      */
@@ -61,25 +56,25 @@ public class StickerPackValidator {
         if (TextUtils.isEmpty(stickerPack.trayImageFile)) {
             throw new IllegalStateException("sticker pack tray id is empty, sticker pack identifier:" + stickerPack.identifier);
         }
-        if (!TextUtils.isEmpty(stickerPack.androidPlayStoreLink) && !isValidWebsiteUrl(stickerPack.androidPlayStoreLink)) {
+        if (!TextUtils.isEmpty(stickerPack.androidPlayStoreLink) && isValidWebsiteUrl(stickerPack.androidPlayStoreLink)) {
             throw new IllegalStateException("Make sure to include http or https in url links, android play store link is not a valid url: " + stickerPack.androidPlayStoreLink);
         }
-        if (!TextUtils.isEmpty(stickerPack.androidPlayStoreLink) && !isURLInCorrectDomain(stickerPack.androidPlayStoreLink, PLAY_STORE_DOMAIN)) {
+        if (!TextUtils.isEmpty(stickerPack.androidPlayStoreLink) && isURLInCorrectDomain(stickerPack.androidPlayStoreLink, PLAY_STORE_DOMAIN)) {
             throw new IllegalStateException("android play store link should use play store domain: " + PLAY_STORE_DOMAIN);
         }
-        if (!TextUtils.isEmpty(stickerPack.iosAppStoreLink) && !isValidWebsiteUrl(stickerPack.iosAppStoreLink)) {
+        if (!TextUtils.isEmpty(stickerPack.iosAppStoreLink) && isValidWebsiteUrl(stickerPack.iosAppStoreLink)) {
             throw new IllegalStateException("Make sure to include http or https in url links, ios app store link is not a valid url: " + stickerPack.iosAppStoreLink);
         }
-        if (!TextUtils.isEmpty(stickerPack.iosAppStoreLink) && !isURLInCorrectDomain(stickerPack.iosAppStoreLink, APPLE_STORE_DOMAIN)) {
+        if (!TextUtils.isEmpty(stickerPack.iosAppStoreLink) && isURLInCorrectDomain(stickerPack.iosAppStoreLink, APPLE_STORE_DOMAIN)) {
             throw new IllegalStateException("iOS app store link should use app store domain: " + APPLE_STORE_DOMAIN);
         }
-        if (!TextUtils.isEmpty(stickerPack.licenseAgreementWebsite) && !isValidWebsiteUrl(stickerPack.licenseAgreementWebsite)) {
+        if (!TextUtils.isEmpty(stickerPack.licenseAgreementWebsite) && isValidWebsiteUrl(stickerPack.licenseAgreementWebsite)) {
             throw new IllegalStateException("Make sure to include http or https in url links, ic_license agreement link is not a valid url: " + stickerPack.licenseAgreementWebsite);
         }
-        if (!TextUtils.isEmpty(stickerPack.privacyPolicyWebsite) && !isValidWebsiteUrl(stickerPack.privacyPolicyWebsite)) {
+        if (!TextUtils.isEmpty(stickerPack.privacyPolicyWebsite) && isValidWebsiteUrl(stickerPack.privacyPolicyWebsite)) {
             throw new IllegalStateException("Make sure to include http or https in url links, privacy policy link is not a valid url: " + stickerPack.privacyPolicyWebsite);
         }
-        if (!TextUtils.isEmpty(stickerPack.publisherWebsite) && !isValidWebsiteUrl(stickerPack.publisherWebsite)) {
+        if (!TextUtils.isEmpty(stickerPack.publisherWebsite) && isValidWebsiteUrl(stickerPack.publisherWebsite)) {
             throw new IllegalStateException("Make sure to include http or https in url links, publisher website link is not a valid url: " + stickerPack.publisherWebsite);
         }
         if (!TextUtils.isEmpty(stickerPack.publisherEmail) && !Patterns.EMAIL_ADDRESS.matcher(stickerPack.publisherEmail).matches()) {
@@ -109,7 +104,6 @@ public class StickerPackValidator {
             validateSticker(context, stickerPack.identifier, sticker);
         }
     }
-
     private static void validateSticker(@NonNull Context context, @NonNull final String identifier, @NonNull final Sticker sticker) throws IllegalStateException {
         if (sticker.emojis.size() > EMOJI_LIMIT) {
             throw new IllegalStateException("emoji count exceed limit, sticker pack identifier:" + identifier + ", filename:" + sticker.imageFileName);
@@ -119,7 +113,6 @@ public class StickerPackValidator {
         }
         validateStickerFile(context, identifier, sticker.imageFileName);
     }
-
     private static void validateStickerFile(@NonNull Context context, @NonNull String identifier, @NonNull final String fileName) throws IllegalStateException {
         try {
             InputStream iStream = context.getContentResolver().openInputStream(ImageUtils.getStickerImageAsset(identifier, fileName));
@@ -145,7 +138,6 @@ public class StickerPackValidator {
             throw new IllegalStateException("cannot open sticker file: sticker pack identifier:" + identifier + ", filename:" + fileName, e);
         }
     }
-
     private static void checkStringValidity(@NonNull String string) {
         String pattern = "[\\w-.,'\\s]+"; // [a-zA-Z0-9_-.' ]
         if (!string.matches(pattern)) {
@@ -155,8 +147,6 @@ public class StickerPackValidator {
             throw new IllegalStateException(string + " cannot contain ..");
         }
     }
-
-    @SuppressWarnings("BooleanMethodIsAlwaysInverted")
     private static boolean isValidWebsiteUrl(String websiteUrl) throws IllegalStateException {
         try {
             new URL(websiteUrl);
@@ -164,21 +154,18 @@ public class StickerPackValidator {
             Log.e("StickerPackValidator", "url: " + websiteUrl + " is malformed");
             throw new IllegalStateException("url: " + websiteUrl + " is malformed", e);
         }
-        return URLUtil.isHttpUrl(websiteUrl) || URLUtil.isHttpsUrl(websiteUrl);
-
+        return !URLUtil.isHttpUrl(websiteUrl) && !URLUtil.isHttpsUrl(websiteUrl);
     }
-
-    @SuppressWarnings("BooleanMethodIsAlwaysInverted")
     private static boolean isURLInCorrectDomain(String urlString, String domain) throws IllegalStateException {
         try {
             URL url = new URL(urlString);
             if (domain.equals(url.getHost())) {
-                return true;
+                return false;
             }
         } catch (MalformedURLException e) {
             Log.e("StickerPackValidator", "url: " + urlString + " is malformed");
             throw new IllegalStateException("url: " + urlString + " is malformed");
         }
-        return false;
+        return true;
     }
 }

@@ -1,32 +1,33 @@
 package com.d4rk.stickermaker.activities;
+
 import android.content.ComponentName;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.net.Uri;
 import android.os.Build;
-import androidx.core.content.res.ResourcesCompat;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
-import android.content.Intent;
 import android.os.Bundle;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import com.google.android.material.bottomappbar.BottomAppBar;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import com.facebook.drawee.backends.pipeline.Fresco;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.sangcomz.fishbun.define.Define;
+
+import androidx.annotation.Nullable;
+import androidx.core.content.res.ResourcesCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+
 import com.d4rk.stickermaker.R;
 import com.d4rk.stickermaker.backgroundRemover.CutOut;
 import com.d4rk.stickermaker.identities.StickerPacksContainer;
 import com.d4rk.stickermaker.utils.StickerPacksManager;
 import com.d4rk.stickermaker.whatsapp_api.AddStickerPackActivity;
+import com.facebook.drawee.backends.pipeline.Fresco;
+import com.google.android.material.bottomappbar.BottomAppBar;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.sangcomz.fishbun.define.Define;
 import java.util.List;
 import java.util.Objects;
 public class MainActivity extends AddStickerPackActivity implements CheckRefreshClickListener {
@@ -49,26 +50,16 @@ public class MainActivity extends AddStickerPackActivity implements CheckRefresh
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.cusotmcreate, null));
         fab.setOnClickListener(view -> {
-            Intent intent=new Intent(MainActivity.this, NewStickerPackActivity.class);
+            Intent intent = new Intent(MainActivity.this, NewStickerPackActivity.class);
             startActivity(intent);
         });
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.bottom_menu,menu);
+        inflater.inflate(R.menu.bottom_menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
-    private final BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            if (item.getItemId() == R.id.share) {
-                setFragmento(myStickersFragment);
-                return true;
-            }
-            return false;
-        }
-    };
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -106,8 +97,7 @@ public class MainActivity extends AddStickerPackActivity implements CheckRefresh
         fragmentTransaction.commit();
     }
     @Override
-    public void onBackPressed() {
-    }
+    public void onBackPressed() {}
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if ((keyCode == KeyEvent.KEYCODE_BACK)) {
@@ -119,12 +109,12 @@ public class MainActivity extends AddStickerPackActivity implements CheckRefresh
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int menuItem = item.getItemId();
-        if(menuItem==android.R.id.home){
-            ShowRoundDialogFragment showRoundDialogFragment =new ShowRoundDialogFragment();
+        if (menuItem == android.R.id.home) {
+            ShowRoundDialogFragment showRoundDialogFragment = new ShowRoundDialogFragment();
             showRoundDialogFragment.show(getSupportFragmentManager(),
                     "add");
         }
-        if(menuItem==R.id.share){
+        if (menuItem == R.id.share) {
             try {
                 Intent i = new Intent(Intent.ACTION_SEND);
                 i.setType("text/plain");
@@ -133,51 +123,51 @@ public class MainActivity extends AddStickerPackActivity implements CheckRefresh
                 sAux = sAux + "https://play.google.com/store/apps/details?id=com.d4rk.stickermaker";
                 i.putExtra(Intent.EXTRA_TEXT, sAux);
                 startActivity(Intent.createChooser(i, "choose one"));
-            } catch(Exception e) {
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }
-        if(menuItem==R.id.about){
-            AboutDialogFragment ab=new AboutDialogFragment();
-            ab.show(getSupportFragmentManager(),"SHOWN");
+        if (menuItem == R.id.about) {
+            AboutDialogFragment ab = new AboutDialogFragment();
+            ab.show(getSupportFragmentManager(), "SHOWN");
         }
-        if(menuItem==R.id.support){
-                String appId = this.getPackageName();
-                Intent rateIntent = new Intent(Intent.ACTION_VIEW,
-                        Uri.parse("market://details?id=" + appId));
-                boolean marketFound = false;
-                final List<ResolveInfo> otherApps = this.getPackageManager()
-                        .queryIntentActivities(rateIntent, 0);
-                for (ResolveInfo otherApp: otherApps) {
-                    if (otherApp.activityInfo.applicationInfo.packageName
-                            .equals("com.android.vending")) {
-                        ActivityInfo otherAppActivity = otherApp.activityInfo;
-                        ComponentName componentName = new ComponentName(
-                                otherAppActivity.applicationInfo.packageName,
-                                otherAppActivity.name
-                        );
-                        rateIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                        rateIntent.addFlags(Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
-                        rateIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                        rateIntent.setComponent(componentName);
-                        this.startActivity(rateIntent);
-                        marketFound = true;
-                        break;
-                    }
-                }
-                if (!marketFound) {
-                    Intent webIntent = new Intent(Intent.ACTION_VIEW,
-                            Uri.parse("https://play.google.com/store/apps/details?id="+appId));
-                    this.startActivity(webIntent);
+        if (menuItem == R.id.support) {
+            String appId = this.getPackageName();
+            Intent rateIntent = new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("market://details?id=" + appId));
+            boolean marketFound = false;
+            final List < ResolveInfo > otherApps = this.getPackageManager()
+                    .queryIntentActivities(rateIntent, 0);
+            for (ResolveInfo otherApp: otherApps) {
+                if (otherApp.activityInfo.applicationInfo.packageName
+                        .equals("com.android.vending")) {
+                    ActivityInfo otherAppActivity = otherApp.activityInfo;
+                    ComponentName componentName = new ComponentName(
+                            otherAppActivity.applicationInfo.packageName,
+                            otherAppActivity.name
+                    );
+                    rateIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    rateIntent.addFlags(Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
+                    rateIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    rateIntent.setComponent(componentName);
+                    this.startActivity(rateIntent);
+                    marketFound = true;
+                    break;
                 }
             }
+            if (!marketFound) {
+                Intent webIntent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("https://play.google.com/store/apps/details?id=" + appId));
+                this.startActivity(webIntent);
+            }
+        }
         return super.onOptionsItemSelected(item);
     }
     @Override
     public void onLicenseClick() {
         openPlay("com.d4rk.cleaner");
     }
-    public void openPlay(String mark){
+    public void openPlay(String mark) {
         Intent i;
         PackageManager manager = getPackageManager();
         try {
@@ -188,7 +178,7 @@ public class MainActivity extends AddStickerPackActivity implements CheckRefresh
             startActivity(i);
         } catch (PackageManager.NameNotFoundException e) {
             Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setData(Uri.parse("market://details?id="+mark));
+            intent.setData(Uri.parse("market://details?id=" + mark));
             startActivity(intent);
         }
     }
@@ -202,7 +192,7 @@ public class MainActivity extends AddStickerPackActivity implements CheckRefresh
     }
     @Override public void onAboutClick() {
         Intent intent = new Intent(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse("market://details?id="+"com.d4rk.cleaner"));
+        intent.setData(Uri.parse("market://details?id=" + "com.d4rk.cleaner"));
         startActivity(intent);
     }
     @Override

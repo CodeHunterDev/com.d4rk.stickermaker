@@ -1,18 +1,13 @@
 package com.d4rk.stickermaker.utils;
-
 import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
 import android.provider.MediaStore;
-
 import com.d4rk.stickermaker.constants.Constants;
-
 import java.io.*;
 import java.util.Objects;
 import java.util.Random;
-
 public class FileUtils {
-
     public static String generateRandomIdentifier() {
         String possibilities = "abcdefghijklmnopqrstuvwxyz0123456789";
         Random random = new Random();
@@ -22,7 +17,6 @@ public class FileUtils {
         }
         return generatedIdentifier.toString();
     }
-
     public static void initializeDirectories(Context context) {
         File directory = new File(Constants.STICKERS_DIRECTORY_PATH);
         if (!directory.exists()) {
@@ -37,7 +31,6 @@ public class FileUtils {
             }
         }
     }
-
     public static byte[] getBytes(InputStream inputStream) throws IOException {
         ByteArrayOutputStream byteBuffer = new ByteArrayOutputStream();
         int bufferSize = 1024;
@@ -49,12 +42,11 @@ public class FileUtils {
         }
         return byteBuffer.toByteArray();
     }
-
     static void deleteFolder(String path) {
         File dir = new File(path);
         if (dir.exists()) {
             File[] files = dir.listFiles();
-            for (File file : files) {
+            for (File file: files) {
                 if (file.isDirectory()) {
                     deleteFolder(file.getPath());
                 } else {
@@ -64,7 +56,6 @@ public class FileUtils {
         }
         dir.delete();
     }
-
     public static void deleteFile(String path, Context context) {
         File file = new File(path);
         if (file.exists()) {
@@ -75,11 +66,12 @@ public class FileUtils {
                 MediaStore.MediaColumns.DATA + "='" + path + "'", null
         );
     }
-
     public static String getImageRealPathFromURI(Context context, Uri contentUri) {
         Cursor cursor = null;
         try {
-            String[] proj = {MediaStore.Images.Media.DATA};
+            String[] proj = {
+                    MediaStore.Images.Media.DATA
+            };
             cursor = context.getContentResolver().query(contentUri, proj, null, null, null);
             if (cursor != null) {
                 int column_index = Objects.requireNonNull(cursor).getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
@@ -94,7 +86,6 @@ public class FileUtils {
             }
         }
     }
-
     public static String getFolderSizeLabel(String path) {
         long size = getFolderSize(new File(path)) / 1024; // Get size and convert bytes into Kb.
         if (size >= 1024) {
@@ -103,11 +94,10 @@ public class FileUtils {
             return size + " KB";
         }
     }
-
     private static long getFolderSize(File file) {
         long size = 0;
         if (file.isDirectory()) {
-            for (File child : file.listFiles()) {
+            for (File child: file.listFiles()) {
                 size += getFolderSize(child);
             }
         } else {

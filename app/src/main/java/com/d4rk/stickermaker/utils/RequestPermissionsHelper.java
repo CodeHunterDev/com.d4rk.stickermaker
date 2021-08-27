@@ -16,6 +16,8 @@ public class RequestPermissionsHelper {
     }
     @RequiresApi(api = Build.VERSION_CODES.R)
     public static void requestPermissions(Activity context) {
-        ActivityCompat.requestPermissions(context, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.MANAGE_EXTERNAL_STORAGE}, CODE_REQUEST_WRITE_READ_EXTERNAL_STORAGE);
+        ActivityCompat.requestPermissions(context, new String[] {
+                Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.MANAGE_EXTERNAL_STORAGE
+        }, CODE_REQUEST_WRITE_READ_EXTERNAL_STORAGE);
     }
 }

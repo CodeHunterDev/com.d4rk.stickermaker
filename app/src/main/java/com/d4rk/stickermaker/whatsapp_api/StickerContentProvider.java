@@ -11,15 +11,12 @@ import com.google.gson.Gson;
 import com.d4rk.stickermaker.BuildConfig;
 import com.d4rk.stickermaker.constants.Constants;
 import com.d4rk.stickermaker.utils.StickerPacksManager;
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
-
 public class StickerContentProvider extends ContentProvider {
-
     /**
      * Do not change the strings listed below, as these are used by WhatsApp. And changing these will break the interface between sticker app and WhatsApp.
      */
@@ -33,49 +30,32 @@ public class StickerContentProvider extends ContentProvider {
     public static final String PUBLISHER_WEBSITE = "sticker_pack_publisher_website";
     public static final String PRIVACY_POLICY_WEBSITE = "sticker_pack_privacy_policy_website";
     public static final String LICENSE_AGREENMENT_WEBSITE = "sticker_pack_license_agreement_website";
-
     public static final String STICKER_FILE_NAME_IN_QUERY = "sticker_file_name";
     public static final String STICKER_FILE_EMOJI_IN_QUERY = "sticker_emoji";
     public static final String CONTENT_FILE_NAME = "contents.json";
-
     public static Uri AUTHORITY_URI = new Uri.Builder().scheme(ContentResolver.SCHEME_CONTENT).authority(BuildConfig.CONTENT_PROVIDER_AUTHORITY).appendPath(StickerContentProvider.METADATA).build();
-
     /**
      * Do not change the values in the UriMatcher because otherwise, WhatsApp will not be able to fetch the stickers from the ContentProvider.
      */
     private static final UriMatcher MATCHER = new UriMatcher(UriMatcher.NO_MATCH);
     public static final String METADATA = "metadata";
     private static final int METADATA_CODE = 1;
-
     private static final int METADATA_CODE_FOR_SINGLE_PACK = 2;
-
     static final String STICKERS = "stickers";
     private static final int STICKERS_CODE = 3;
-
     static final String STICKERS_ASSET = "stickers_asset";
     private static final int STICKERS_ASSET_CODE = 4;
-
     private static final int STICKER_PACK_TRAY_ICON_CODE = 5;
-
     private List<StickerPack> stickerPackList;
-
     @Override
     public boolean onCreate() {
-
         final String authority = BuildConfig.CONTENT_PROVIDER_AUTHORITY;
         if (!authority.startsWith(Objects.requireNonNull(getContext()).getPackageName())) {
             throw new IllegalStateException("your authority (" + authority + ") for the content provider should start with your package name: " + getContext().getPackageName());
         }
-
-        //the call to get the metadata for the sticker packs.
         MATCHER.addURI(authority, METADATA, METADATA_CODE);
-
-        //the call to get the metadata for single sticker pack. * represent the identifier
         MATCHER.addURI(authority, METADATA + "/*", METADATA_CODE_FOR_SINGLE_PACK);
-
-        //gets the list of stickers for a sticker pack, * respresent the identifier.
         MATCHER.addURI(authority, STICKERS + "/*", STICKERS_CODE);
-
         for (StickerPack stickerPack : getStickerPackList()) {
             MATCHER.addURI(authority, STICKERS_ASSET + "/" + stickerPack.identifier + "/" + stickerPack.trayImageFile, STICKER_PACK_TRAY_ICON_CODE);
             for (Sticker sticker : stickerPack.getStickers()) {
@@ -85,7 +65,6 @@ public class StickerContentProvider extends ContentProvider {
         }
         return true;
     }
-
     @Override
     public Cursor query(@NonNull Uri uri, @Nullable String[] projection, String selection,
                         String[] selectionArgs, String sortOrder) {
@@ -101,7 +80,6 @@ public class StickerContentProvider extends ContentProvider {
             throw new IllegalArgumentException("Unknown URI: " + uri);
         }
     }
-
     @Nullable
     @Override
     public ParcelFileDescriptor openFile(@NonNull Uri uri, @NonNull String mode) {
@@ -117,7 +95,6 @@ public class StickerContentProvider extends ContentProvider {
         }
         return null;
     }
-
     @Override
     public String getType(@NonNull Uri uri) {
         final int matchCode = MATCHER.match(uri);
@@ -136,20 +113,16 @@ public class StickerContentProvider extends ContentProvider {
                 throw new IllegalArgumentException("Unknown URI: " + uri);
         }
     }
-
     private synchronized void readContentFile(@NonNull Context context) {
         stickerPackList = StickerPacksManager.getStickerPacks(context);
     }
-
     public List<StickerPack> getStickerPackList() {
         readContentFile(Objects.requireNonNull(getContext()));
         return stickerPackList;
     }
-
     private Cursor getPackForAllStickerPacks(@NonNull Uri uri) {
         return getStickerPackInfo(uri, getStickerPackList());
     }
-
     private Cursor getCursorForSingleStickerPack(@NonNull Uri uri) {
         final String identifier = uri.getLastPathSegment();
         for (StickerPack stickerPack : getStickerPackList()) {
@@ -157,10 +130,8 @@ public class StickerContentProvider extends ContentProvider {
                 return getStickerPackInfo(uri, Collections.singletonList(stickerPack));
             }
         }
-
         return getStickerPackInfo(uri, new ArrayList<>());
     }
-
     @NonNull
     private Cursor getStickerPackInfo(@NonNull Uri uri, @NonNull List<StickerPack> stickerPackList) {
         MatrixCursor cursor = new MatrixCursor(
@@ -192,7 +163,6 @@ public class StickerContentProvider extends ContentProvider {
         cursor.setNotificationUri(Objects.requireNonNull(getContext()).getContentResolver(), uri);
         return cursor;
     }
-
     @NonNull
     private Cursor getStickersForAStickerPack(@NonNull Uri uri) {
         final String identifier = uri.getLastPathSegment();
@@ -207,7 +177,6 @@ public class StickerContentProvider extends ContentProvider {
         cursor.setNotificationUri(Objects.requireNonNull(getContext()).getContentResolver(), uri);
         return cursor;
     }
-
     private File getImageAsset(Uri uri) throws IllegalArgumentException {
         final List<String> pathSegments = uri.getPathSegments();
         if (pathSegments.size() != 3) {
@@ -221,7 +190,6 @@ public class StickerContentProvider extends ContentProvider {
         if (TextUtils.isEmpty(fileName)) {
             throw new IllegalArgumentException("file name is empty, uri: " + uri);
         }
-        //making sure the file that is trying to be fetched is in the list of stickers.
         for (StickerPack stickerPack : getStickerPackList()) {
             if (identifier.equals(stickerPack.identifier)) {
                 if (fileName.equals(stickerPack.trayImageFile)) {
@@ -237,16 +205,13 @@ public class StickerContentProvider extends ContentProvider {
         }
         return null;
     }
-
     private File fetchFile(@NonNull String fileName, @NonNull String identifier) {
         return new File(Constants.STICKERS_DIRECTORY_PATH + identifier + "/" + fileName);
     }
-
     @Override
     public int delete(@NonNull Uri uri, @Nullable String selection, String[] selectionArgs) {
         throw new UnsupportedOperationException("Not supported");
     }
-
     @Override
     public Uri insert(@NonNull Uri uri, ContentValues values) {
         final String authority = BuildConfig.CONTENT_PROVIDER_AUTHORITY;
@@ -260,7 +225,6 @@ public class StickerContentProvider extends ContentProvider {
         }
         return uri;
     }
-
     @Override
     public int update(@NonNull Uri uri, ContentValues values, String selection,
                       String[] selectionArgs) {
