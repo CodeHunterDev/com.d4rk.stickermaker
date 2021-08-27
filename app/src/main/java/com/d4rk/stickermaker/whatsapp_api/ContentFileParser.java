@@ -2,24 +2,19 @@ package com.d4rk.stickermaker.whatsapp_api;
 import androidx.annotation.NonNull;
 import android.text.TextUtils;
 import android.util.JsonReader;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
-
 public class ContentFileParser {
-
     private static final int LIMIT_EMOJI_COUNT = 2;
-
     @NonNull
     public static List<StickerPack> parseStickerPacks(@NonNull InputStream contentsInputStream) throws IOException, IllegalStateException {
         try (JsonReader reader = new JsonReader(new InputStreamReader(contentsInputStream))) {
             return readStickerPacks(reader);
         }
     }
-
     @NonNull
     private static List<StickerPack> readStickerPacks(@NonNull JsonReader reader) throws IOException, IllegalStateException {
         List<StickerPack> stickerPackList = new ArrayList<>();
@@ -53,7 +48,6 @@ public class ContentFileParser {
         }
         return stickerPackList;
     }
-
     @NonNull
     private static StickerPack readStickerPack(@NonNull JsonReader reader) throws IOException, IllegalStateException {
         reader.beginObject();
@@ -115,6 +109,7 @@ public class ContentFileParser {
         if (stickerList == null || stickerList.size() == 0) {
             throw new IllegalStateException("sticker list is empty");
         }
+        assert identifier != null;
         if (identifier.contains("..") || identifier.contains("/")) {
             throw new IllegalStateException("identifier should not contain .. or / to prevent directory traversal");
         }
@@ -123,12 +118,10 @@ public class ContentFileParser {
         stickerPack.setStickers(stickerList);
         return stickerPack;
     }
-
     @NonNull
     private static List<Sticker> readStickers(@NonNull JsonReader reader) throws IOException, IllegalStateException {
         reader.beginArray();
         List<Sticker> stickerList = new ArrayList<>();
-
         while (reader.hasNext()) {
             reader.beginObject();
             String imageFile = null;
@@ -145,14 +138,14 @@ public class ContentFileParser {
                     }
                     reader.endArray();
                 } else {
-                    //throw new IllegalStateException("unknown field in json: " + key);
-                    reader.skipValue();
+                    throw new IllegalStateException("unknown field in json: " + key);
                 }
             }
             reader.endObject();
             if (TextUtils.isEmpty(imageFile)) {
                 throw new IllegalStateException("sticker image_file cannot be empty");
             }
+            assert imageFile != null;
             if (!imageFile.endsWith(".webp")) {
                 throw new IllegalStateException("image file for stickers should be webp files, image file is: " + imageFile);
             }

@@ -1,8 +1,7 @@
 <p align="center">
-<img src="/screenshots/ic_play_store.png" width="300">
+<img src="/screenshots/ic_play_store.png" width="200">
 </p>
 
-![Android CI](https://github.com/D4rK7355608/com.d4rk.stickermaker/workflows/Android%20CI/badge.svg)
 ![Works with Android](https://img.shields.io/badge/Works%20with-Android-blue)
 ![GitHub issues](https://img.shields.io/github/issues/D4rK7355608/com.d4rk.stickermaker)
 ![Pull requests](https://img.shields.io/github/issues-pr/D4rK7355608/com.d4rk.stickermaker?label=Pull%20requests)
@@ -14,7 +13,6 @@
 - ╔╦╦╦═╦╗╔═╦═╦══╦═╗
 - ║║║║╩╣╚╣═╣║║║║║╩╣
 - ╚══╩═╩═╩═╩═╩╩╩╩═╝
-
 
 # Try D4rK Sticker Maker with Google inspired material design made by D4rK! Easy to use without ads!
 
@@ -62,10 +60,10 @@ Upcoming major features in development:
 
 ## Screenshots:
 
-<img src="/screenshots/1.png" width="200">
-<img src="/screenshots/2.png" width="200">
-<img src="/screenshots/3.png" width="200">
-<img src="/screenshots/4.png" width="200">
+<img src="/screenshots/1.png" width="500">
+<img src="/screenshots/2.png" width="500">
+<img src="/screenshots/3.png" width="500">
+<img src="/screenshots/4.png" width="500">
 
 <details>
   <summary>Special Thanks</summary>

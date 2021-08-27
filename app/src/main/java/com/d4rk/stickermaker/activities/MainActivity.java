@@ -1,5 +1,4 @@
 package com.d4rk.stickermaker.activities;
-
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -13,12 +12,10 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-
 import androidx.annotation.Nullable;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-
 import com.d4rk.stickermaker.R;
 import com.d4rk.stickermaker.backgroundRemover.CutOut;
 import com.d4rk.stickermaker.identities.StickerPacksContainer;

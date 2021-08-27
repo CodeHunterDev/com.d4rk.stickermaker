@@ -29,7 +29,6 @@ public class ShowRoundDialogFragment extends RoundedBottomSheet {
     public View onCreateView(LayoutInflater inflater,
                              @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-
         return inflater.inflate(R.layout.fragment_bottom_sheet, container,
                 false);
     }

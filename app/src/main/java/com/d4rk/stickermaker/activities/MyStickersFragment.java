@@ -1,9 +1,6 @@
 package com.d4rk.stickermaker.activities;
-
 import androidx.fragment.app.Fragment;
-
 import android.os.Bundle;
-
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.GridLayoutManager;

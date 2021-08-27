@@ -6,9 +6,7 @@ import android.widget.Toast;
 import com.d4rk.stickermaker.R;
 import com.d4rk.stickermaker.identities.StickerPacksContainer;
 import com.d4rk.stickermaker.utils.StickerPacksManager;
-
 import java.util.Objects;
-
 public class AddToStickerPackActivity extends AppCompatActivity {
     Uri stickerUri;
     @Override
