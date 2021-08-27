@@ -54,7 +54,7 @@
                     android:layout_width="match_parent"
                     android:layout_marginBottom="5dp"
                     android:lines="1"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:layout_height="wrap_content"
                     android:text="Size"/>
                 <TextView
@@ -62,7 +62,7 @@
                     android:layout_marginBottom="5dp"
                     android:lines="1"
                     android:id="@+id/sticker_downloads_count"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:layout_height="wrap_content"
                     android:text="Downloads"/>
             </LinearLayout>

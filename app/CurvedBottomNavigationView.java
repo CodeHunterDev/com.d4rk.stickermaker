@@ -12,17 +12,17 @@ public class CurvedBottomNavigationView extends BottomNavigationView {
     /** the CURVE_CIRCLE_RADIUS represent the radius of the fab button */
     private final int CURVE_CIRCLE_RADIUS = 256 / 2;
     // the coordinates of the first curve
-    private Point mFirstCurveStartPoint = new Point();
-    private Point mFirstCurveEndPoint = new Point();
-    private Point mFirstCurveControlPoint1 = new Point();
-    private Point mFirstCurveControlPoint2 = new Point();
+    private final Point mFirstCurveStartPoint = new Point();
+    private final Point mFirstCurveEndPoint = new Point();
+    private final Point mFirstCurveControlPoint1 = new Point();
+    private final Point mFirstCurveControlPoint2 = new Point();
 
     //the coordinates of the second curve
     @SuppressWarnings("FieldCanBeLocal")
     private Point mSecondCurveStartPoint = new Point();
-    private Point mSecondCurveEndPoint = new Point();
-    private Point mSecondCurveControlPoint1 = new Point();
-    private Point mSecondCurveControlPoint2 = new Point();
+    private final Point mSecondCurveEndPoint = new Point();
+    private final Point mSecondCurveControlPoint1 = new Point();
+    private final Point mSecondCurveControlPoint2 = new Point();
     private int mNavigationBarWidth;
     private int mNavigationBarHeight;
 
